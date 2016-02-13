@@ -5,9 +5,9 @@ var profanityList = null;//override with array for specific strings
 
 var Plugin = {
         filterEmail: function(regData,next) {
-            console.log('next:',next);
+            //console.log('next:',next);
             if(regData && regData.userData && regData.userData.email){
-                console.log('got email',regData.userData.email);
+                //console.log('got email',regData.userData.email);
                 if (regData.userData.email.toString().toLowerCase().indexOf(emailDomain) >= 0){
                  return next(null,regData);  
                 }
@@ -19,7 +19,6 @@ var Plugin = {
             if (!data){
                 return next(null,data);//no data no profanity lol
             }
-            var e = false;
             //check content
             if (data.content){
                 if(callbackOnProfanity(data.content,next,data)){
