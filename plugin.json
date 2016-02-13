@@ -1,0 +1,17 @@
+{
+    "url": "https://github.com/fenwick67/nodebb-email-domain-filter",
+    "library": "./email-domain-filter.js",
+    "staticDirs": {
+        "images": "public/images"
+    },
+    "less": [
+        "assets/style.less"
+    ],
+    "hooks": [
+        { "hook": "filter:register.check", "method": "filterEmail" },
+        { "hook": "filter:topic.create", "method": "profanityHook" },
+        { "hook": "filter:topic.reply", "method": "profanityHook" },
+        { "hook": "filter:post.edit", "method": "profanityHook" },
+        { "hook": "filter:post.save", "method": "profanityHook" }
+    ]
+}

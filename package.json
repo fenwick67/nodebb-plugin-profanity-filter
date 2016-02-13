@@ -1,0 +1,22 @@
+{
+  "name": "nodebb-plugin-email-domain-filter",
+  "version": "1.0.0",
+  "description": "nodebb email domain filter",
+  "main": "email-domain-filter.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fenwick67/nodebb-email-domain-filter.git"
+  },
+  "author": "drew harwell",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fenwick67/nodebb-email-domain-filter/issues"
+  },
+  "homepage": "https://github.com/fenwick67/nodebb-email-domain-filter#readme",
+  "dependencies": {
+    "profanity-util": "0.0.5"
+  }
+}
