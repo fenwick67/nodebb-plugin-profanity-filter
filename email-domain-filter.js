@@ -25,6 +25,13 @@ var Plugin = {
                     return;
                 };
             }
+            //check title
+            if (data.title){
+                if(callbackOnProfanity(data.title,next,data)){
+                    return;
+                };    
+            }
+            
             //check topic title
             if (data.topic && data.topic.title){
                 if(callbackOnProfanity(data.topic.title,next,data)){
