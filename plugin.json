@@ -9,6 +9,7 @@
     ],
     "hooks": [
         { "hook": "filter:register.check", "method": "filterEmail" },
+        { "hook": "filter:topic.post", "method": "profanityHook" },
         { "hook": "filter:topic.create", "method": "profanityHook" },
         { "hook": "filter:topic.reply", "method": "profanityHook" },
         { "hook": "filter:post.edit", "method": "profanityHook" },
