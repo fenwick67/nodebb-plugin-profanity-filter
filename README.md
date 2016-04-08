@@ -1,2 +1,4 @@
-# nodebb-email-domain-filter
-an email domain filter for nodebb - only let users with an @gmail.com email address register, and filters out bad words in posts
+# nodebb-profanity-filter
+Filters out profanity in nodebb posts, topic titles, etc.
+
+Set environment variable `PROFANITY_FILTER` to a comma seperated list of profane words to block them.  Leaving it empty uses `profanity-util`'s default profanity list.

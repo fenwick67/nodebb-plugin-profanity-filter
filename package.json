@@ -1,11 +1,8 @@
 {
-  "name": "nodebb-plugin-email-domain-filter",
-  "version": "1.0.0",
-  "description": "nodebb email domain filter",
+  "name": "nodebb-plugin-profanity-filter",
+  "version": "0.0.1",
+  "description": "nodebb profanity filter",
   "main": "email-domain-filter.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/fenwick67/nodebb-email-domain-filter.git"
@@ -18,5 +15,8 @@
   "homepage": "https://github.com/fenwick67/nodebb-email-domain-filter#readme",
   "dependencies": {
     "profanity-util": "0.0.5"
+  },
+  "nbbpm": {
+    "compatibility": "0.8.x"
   }
 }
